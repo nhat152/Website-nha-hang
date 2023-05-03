@@ -788,7 +788,9 @@
     margin: 0 auto;
     text-align: center;
   }
-  
+  .choose-table h2{
+    padding-bottom: 50px;
+  }
   .table-map {
     display: table;
     margin: 0 auto;
@@ -885,12 +887,20 @@
   /* other styles */
 }
   .table-map {
-    width: 580px;
-    height: 420px;
-    background: url('path/to/table-background-image.jpg');
+    width: 700px;
+    height: 500px;
+    padding: 10px 20px;
+    background-color: #ffcc99;
     background-size: cover;
   }
-  
+  .door{
+    text-align: left;
+  }
+  .door span{
+    color: #f93918;
+    font-size: 1.2vw;
+    font-style: oblique;
+  }
 
   /*-----------------------------------*\
     #FOOTER
