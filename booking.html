@@ -169,7 +169,7 @@
                 </ul>
             </nav>
 
-            <a href="#" class="btn btn-secondary">
+            <a href="login.html" class="btn btn-secondary">
                 <span class="text text-1">Đăng nhập</span>
 
                 <span class="text text-2" aria-hidden="true">Đăng Nhập</span>
@@ -226,7 +226,47 @@
 
 
                     </div>
+                    <div class="choose-dish">
+                        <div class="choose-dish-header">
+                            <h2>Đặt đồ trước</h2>
 
+                        </div>
+                        <div class="choose-dish-body">
+                            <div class="menu-list">
+                                <select id="menu-select">
+                                    <option value="">--Chọn món ăn--</option>
+                                    <option value="m1">Món 1</option>
+                                    <option value="m2">Món 2</option>
+                                    <option value="m3">Món 3</option>
+                                    <option value="m4">Món 4</option>
+                                    <option value="m5">Món 5</option>
+                                </select>
+                                <button id="add-menu">Thêm món</button>
+                            </div>
+                            <div class="selected-list">
+                                <h3>Các món đã chọn:</h3>
+                                <ul id="selected-menu"></ul>
+                                <button id="confirm-order">Xác nhận đặt </button>
+                            </div>
+                        </div>
+                    </div>
+                    <script>const selectMenu = document.getElementById('menu-select');
+                        const addMenuBtn = document.getElementById('add-menu');
+                        const selectedMenu = document.getElementById('selected-menu');
+
+                        addMenuBtn.addEventListener('click', () => {
+                            const selectedOption = selectMenu.options[selectMenu.selectedIndex];
+                            if (selectedOption.value !== '') {
+                                const menuItem = document.createElement('li');
+                                menuItem.innerText = selectedOption.text;
+                                menuItem.setAttribute('data-value', selectedOption.value);
+                                selectedMenu.appendChild(menuItem);
+                                menuItem.addEventListener('click', () => {
+                                    menuItem.remove();
+                                });
+                            }
+                        });
+                    </script>
                 </div>
 
             </section>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>CNV - Tinh Hoa Ẩm Thực</title>
+    <meta name="title" content="CNV - Tinh Hoa Ẩm Thực">
+    <link rel="icon" href=".\assets\images\features-icon-3.png">
+
+
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/all.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">CNV</p>
+    </div>
+
+
+
+
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+        <div class="container">
+
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    Số 1 đường Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội
+                </span>
+            </address>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Mở cửa : 8h00 đến 23h00</span>
+            </div>
+
+            <a href="tel:+8423456789" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">+84 123 456 7890</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="mailto:cnv@gmail.com.com" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">cnv@gmail.com</span>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/LogoCNV.png" width="160px" height="50px" alt="CNV - Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" width="160" height="50" alt="CNV - Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+
+                            <span class="span">Trang chủ</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="menu.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Thực đơn</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Giới thiệu</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="booking.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Đặt bàn</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Khuyến mại</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="login.html" class="btn btn-secondary">
+                <span class="text text-1">Đăng nhập</span>
+
+                <span class="text text-2" aria-hidden="true">Đăng Nhập</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <section class="page-login">
+            <div class="container">
+                <h3 class="headline-1 section-title text-center"> ĐĂNG NHẬP</h3>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="username">Tên người dùng:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Đăng nhập</button>
+                </form>
+                <div class="extra-links">
+                    <a href="register.html">Đăng kí</a>
+                    <a href="forgot-password.html">Quên mật khẩu</a>
+                </div>
+                <div class="social-login">
+                    <p>Đăng nhập bằng:</p>
+                    <a href="#" class="facebook-login">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="gmail-login">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./assets/js/script.js"></script>
+
+
+
+</body>
+
+</html>
