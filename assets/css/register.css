@@ -785,7 +785,7 @@
     font-weight: bold;
     color: black;
   }
-
+  input[type="text"],
   input[type="email"],
   input[type="phone"],
   input[type="password"] {
